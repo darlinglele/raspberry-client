@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Simple is a kid</string>
+    <string name="title">SMART CAR CONTROL CENTER</string>
+    <string name="forward">FORWARD</string>
+    <string name="back">BACK</string>
+    <string name="left">LEFT</string>
+    <string name="right">RIGHT</string>
+</resources>
