@@ -14,15 +14,9 @@ import static android.view.MotionEvent.ACTION_UP;
 public class MainActivity extends Activity {
 
     private static HashMap<Integer, Command> commandMap;
-
-    /**
-     * Called when the activity is first created.
-     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.main);
         setListener();
     }
@@ -60,20 +54,15 @@ public class MainActivity extends Activity {
         }
 
         if (ACTION_DOWN == motionEvent.getAction())
-
         {
-
             sendCommand(commandMap.get(view.getId()));
         }
 
         if (ACTION_UP == motionEvent.getAction())
-
         {
             sendCommand(new Command("stop"));
         }
-
         return false;
-
     }
 
     private void sendCommand(Command command) {
